@@ -2,7 +2,7 @@
 CSD-MD is a Python package that enables the user to setup and run a molecular dynamics simulation using CSD entries and CCDC tools.
 
 ## Funding, Authorship, and Acknowledgments
-This workflow has been developed thanks to the seed funding from the Grant "UKRI Impact Acceleration Account (IAA) Proof of Concept Scheme" and the collaboration between:
+This workflow was developed with seed funding from the UKRI Impact Acceleration Account (IAA) Proof of Concept Scheme, supporting the project *Expanding the CCDC Tools: An Integrated Workflow for Molecular Dynamics Simulations and Machine-Learned Potentials within the CCDC Toolset*, a collaborative initiative between:
 - The Richard Bryce Group at the University of Manchester (UoM): https://research.manchester.ac.uk/en/persons/richard.bryce and,
 - The Discovery Science Team at the Cambridge Cristallographic Data Centre (CCDC).
 
@@ -13,6 +13,20 @@ This workflow has been developed thanks to the seed funding from the Grant "UKRI
 - Kepa Burusco-Goni (CCDC) -> install tests
 #### Credits
 - Christopher D. Williams (UoM), Simon Cottrell (CCDC), Kepa Burusco-Goni (CCDC), Austin Lloyd (CCDC), Bojana Popovic (CCDC), & Richard Bryce (UoM)
+
+#### Citation
+Christopher D. Williams, Simon Cottrell, Kepa Burusco-Goni, Austin Lloyd, Bojana Popovic, and Richard Bryce; *Expanding the CCDC Tools: An Integrated Workflow for Molecular Dynamics Simulations and Machine-Learned Potentials within the CCDC Toolset*. UKRI Impact Acceleration Account (IAA) Proof of Concept Scheme 2024.
+
+## Disclaimer
+The Cambridge Crystallographic Data Centre (CCDC) provides various scripts to many users for use with CCDC applications. Some scripts may be library scripts, written at some earlier stage in time and distributed to other users. Other scripts may be written *de novo* or modified library scripts for distribution to a specific client for a specific purpose.
+Unless otherwise agreed, CCDC reserves the right to store a modified or *de novo* script and use that script as part of a library available to other users.
+No warranty: regardless of the intent of the parties, CCDC makes no warranty that any script is fit for any particular purpose.
+License grant: By accepting any CSD-MD script from CCDC, each user accedes to the following terms:
+- CSD-MD scripts and models remain the property of CCDC and the Richard Bryce Group at the University of Manchester. Regardless of any changes made by a user, the original source code, models and script remain the property of CCDC and the Richard Bryce Group at the University of Manchester, and users agree to make no claim of ownership thereof.
+- Users are granted a license to use the CSD-MD software for any purpose, and to change or modify (edit) the script to suit specific needs.
+- Users may not share a CSD-MD script (unmodified or modified by the user) with any third party without permission from CCDC.
+- Users will acknowledge the original authors when using CSD-MD and derived scripts in their research. 
+Please note, this CSD-MD script is provided as-is, but is not formally supported by CCDC at this time.
 
 ## Installation (Ubuntu Linux machine or Linux Virtual Machine)
 This workflow is primarily designed for Linux-based systems. While it can be installed and run on macOS, compatibility may vary and additional configuration might be required. Running the workflow on Windows is not straightforward and typically requires the use of the Windows Subsystem for Linux (WSL), along with manual adjustments to system settings and dependencies.
@@ -138,10 +152,9 @@ Note that "none" will use an MM potential (GAFF2) instead of PairNet. Water will
 - *ibu-4ph9-MM.yaml*:               MD simulation of cyclooxygenase-2 bound ibuprofen using a PairNet potential
 
 ## References:
-
-- CR Groom, IJ Bruno, MP Lightfoot and SC Ward, The Cambridge Structural Database, **2016**, *Acta Cryst.*, B72: 171-179.
-- JC Cole, O Korb, P McCabe, MG Read, R Taylor, Knowledge-Based Conformer Generation Using the Cambridge Structural Database, **2018**, *J. Chem. Inf. Model.*, 58: 615-629.
-- G Jones, P Willett, RC Glen, AR Leach, R Taylor, Development and Validation of a Genetic Algorithm for Flexible Docking, **1997**, *J. Mol. Bio.*, 267: 727-748.
-- P Eastman, J Swails, JD Chodera, RT McGibbon, Y Zhao, KA Beauchamp, LP Wang, AC Simmonett, MP Harrigan, CD Stern, RP Wiewiora, BR Brooks, VS Pande, OpenMM 7: Rapid Development of High Performance Algorithms for Molecular Dynamics, **2017**, *PLOS Comp. Biol.*, 13(7): e1005659.
-- CD Williams, J Kalayan, NA Burton, RA Bryce, Stable and Accurate Atomistic Simulations of Flexible Molecules using Conformationally Generalisable Machine Learned Potentials, **2024**, *Chem. Sci.*, 15: 12780-12795.
-- RA Sykes, NT Johnson, CJ Kingsbury et al, What Has Scripting Ever Done For Us? The CSD Python Application Programming Interface (API), **2024**, *J. Appl. Cryst.*, 57, 1235-1250.
+1. CR Groom, IJ Bruno, MP Lightfoot and SC Ward, The Cambridge Structural Database, **2016**, *Acta Cryst.*, B72: 171-179.
+2. JC Cole, O Korb, P McCabe, MG Read, R Taylor, Knowledge-Based Conformer Generation Using the Cambridge Structural Database, **2018**, *J. Chem. Inf. Model.*, 58: 615-629.
+3. G Jones, P Willett, RC Glen, AR Leach, R Taylor, Development and Validation of a Genetic Algorithm for Flexible Docking, **1997**, *J. Mol. Bio.*, 267: 727-748.
+4. P Eastman, J Swails, JD Chodera, RT McGibbon, Y Zhao, KA Beauchamp, LP Wang, AC Simmonett, MP Harrigan, CD Stern, RP Wiewiora, BR Brooks, VS Pande, OpenMM 7: Rapid Development of High Performance Algorithms for Molecular Dynamics, **2017**, *PLOS Comp. Biol.*, 13(7): e1005659.
+5. CD Williams, J Kalayan, NA Burton, RA Bryce, Stable and Accurate Atomistic Simulations of Flexible Molecules using Conformationally Generalisable Machine Learned Potentials, **2024**, *Chem. Sci.*, 15: 12780-12795.
+6. RA Sykes, NT Johnson, CJ Kingsbury et al, What Has Scripting Ever Done For Us? The CSD Python Application Programming Interface (API), **2024**, *J. Appl. Cryst.*, 57, 1235-1250.
