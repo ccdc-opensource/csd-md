@@ -17,7 +17,8 @@ This workflow has been developed thanks to the seed funding from the Grant "UKRI
 ## Installation (Ubuntu Linux machine or Linux Virtual Machine)
 This workflow is primarily designed for Linux-based systems. While it can be installed and run on macOS, compatibility may vary and additional configuration might be required. Running the workflow on Windows is not straightforward and typically requires the use of the Windows Subsystem for Linux (WSL), along with manual adjustments to system settings and dependencies.
 
-### 1. Install a local miniconda3 in your home directory to avoid interfering with the CCDC one
+### 1. Install a local miniconda3
+To avoid any conflicts with the CSD miniconda install, it is recommended to download and install a local miniconda in your home directory (if you don't have one already).
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
