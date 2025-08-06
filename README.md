@@ -6,12 +6,13 @@ This workflow has been developed thanks to the seed funding from the Grant "UKRI
 - The Richard Bryce Group at the University of Manchester (UoM): https://research.manchester.ac.uk/en/persons/richard.bryce and,
 - The Discovery Science Team at the Cambridge Cristallographic Data Centre (CCDC).
 
-Main author and developer:
+#### Main author and developer
 - Christopher D. Williams (UoM) -> CSD-MD code, workflows and ML models
-Developers:
+#### Developers
 - Simon Cottrell (CCDC) -> ccdc_convertor & convertor tests
 - Kepa Burusco-Goni (CCDC) -> install tests
-Credits: Kepa Burusco-Goni (CCDC), Simon Cottrell (CCDC), Austin Lloyd (CCDC), Bojana Popovic (CCDC), & Richard Bryce (UoM)
+#### Credits
+- Kepa Burusco-Goni (CCDC), Simon Cottrell (CCDC), Austin Lloyd (CCDC), Bojana Popovic (CCDC), & Richard Bryce (UoM)
 
 ## Installation (Ubuntu Linux machine or Linux Virtual Machine)
 This workflow is primarily designed for Linux-based systems. While it can be installed and run on macOS, compatibility may vary and additional configuration might be required. Running the workflow on Windows is not straightforward and typically requires the use of the Windows Subsystem for Linux (WSL), along with manual adjustments to system settings and dependencies.
