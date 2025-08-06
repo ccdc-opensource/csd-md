@@ -12,7 +12,7 @@ This workflow has been developed thanks to the seed funding from the Grant "UKRI
 - Simon Cottrell (CCDC) -> ccdc_convertor & convertor tests
 - Kepa Burusco-Goni (CCDC) -> install tests
 #### Credits
-- Kepa Burusco-Goni (CCDC), Simon Cottrell (CCDC), Austin Lloyd (CCDC), Bojana Popovic (CCDC), & Richard Bryce (UoM)
+- Christopher D. Williams (UoM), Simon Cottrell (CCDC), Kepa Burusco-Goni (CCDC), Austin Lloyd (CCDC), Bojana Popovic (CCDC), & Richard Bryce (UoM)
 
 ## Installation (Ubuntu Linux machine or Linux Virtual Machine)
 This workflow is primarily designed for Linux-based systems. While it can be installed and run on macOS, compatibility may vary and additional configuration might be required. Running the workflow on Windows is not straightforward and typically requires the use of the Windows Subsystem for Linux (WSL), along with manual adjustments to system settings and dependencies.
