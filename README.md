@@ -79,10 +79,10 @@ Once the tests have finished, you can clean up the test directory by running the
 ## Running MD simulations
 A single .yaml input file is required. This contains all information required to retrieve structures, construct topologies and run MD simulations.
 
-Example usage:
+#### Example usage:
 `python CSD-MD.py --md_params input.yaml > md.log`
 
-Input options (input.yaml):
+#### Input options (input.yaml):
 ```
 name:                   name of the simulation
 system type:            "ligand", "protein" or "protein-ligand"
@@ -102,12 +102,12 @@ ensemble:               "NVT"
 - *protein* will retrieve a protein from RCSB Protein Data Bank and generate the initial (sanitised) structure using PDBFixer.
 - *ligand-protein* will retrieve a ligand from a CSD entry and a protein from RCSB Protein Data Bank, and then generate the initial structure by docking the ligand to the protein, defining the binding site using a native ligand in the unsanitised protein structure.
 
-#### solvate system:
+#### Solvate system:
 - *yes* (ligand only) adds water to the system and ionises functional groups appropriate for pH 7.4.
 - *no* will perform a gas phase simulation
 Note that since PairNet has a fixed number of input descriptors, the number of atoms in the ligand must match the number of atoms in the PairNet model.
 
-#### simulation types:
+#### Simulation types:
 - *standard* will perform an MD simulation
 - *enhanced* will perform a metadynamics simulation with sampling enhanced with respect to the rotatable bonds identified using the CCDC conformer generator
 
