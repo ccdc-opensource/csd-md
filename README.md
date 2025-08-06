@@ -25,9 +25,9 @@ Unless otherwise agreed, CCDC reserves the right to store a modified or *de novo
 No warranty: regardless of the intent of the parties, CCDC makes no warranty that any script is fit for any particular purpose.
 
 License grant: By accepting any CSD-MD script from CCDC, each user accedes to the following terms:
-- CSD-MD scripts and models remain the property of CCDC and the Richard Bryce Group at the University of Manchester. Regardless of any changes made by a user, the original source code, models and script remain the property of CCDC and the Richard Bryce Group at the University of Manchester, and users agree to make no claim of ownership thereof.
+- CSD-MD scripts and models remain the property of CCDC and the Richard Bryce Group at the University of Manchester (RBG). Regardless of any changes made by a user, the original source code, models and script remain the property of CCDC and RBG, and users agree to make no claim of ownership thereof.
 - Users are granted a license to use the CSD-MD software for any purpose, and to change or modify (edit) the script to suit specific needs.
-- Users may not share a CSD-MD script (unmodified or modified by the user) with any third party without permission from CCDC.
+- Users may not share the CSD-MD script (unmodified or modified by the user) with any third party without permission from CCDC or RBG.
 - Users will acknowledge the original authors when using CSD-MD and derived scripts in their research. 
 
 Please note, this CSD-MD script is provided as-is, but is not formally supported by CCDC at this time.
