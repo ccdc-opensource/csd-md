@@ -1,7 +1,7 @@
 # CSD-MD
 CSD-MD is a Python package that enables the user to setup and run a molecular dynamics simulation using CSD entries and CCDC tools.
 
-# Funding, Authorship, and Acknowledgments:
+## Funding, Authorship, and Acknowledgments
 This workflow has been developed thanks to the seed funding from the Grant "UKRI Impact Acceleration Account (IAA) Proof of Concept Scheme" and the collaboration between:
 - The Richard Bryce Group at the University of Manchester (UoM): https://research.manchester.ac.uk/en/persons/richard.bryce and,
 - The Discovery Science Team at the Cambridge Cristallographic Data Centre (CCDC).
@@ -13,22 +13,22 @@ Developers:
 - Kepa Burusco-Goni (CCDC) -> install tests
 Credits: Kepa Burusco-Goni (CCDC), Simon Cottrell (CCDC), Austin Lloyd (CCDC), Bojana Popovic (CCDC), & Richard Bryce (UoM)
 
-# Installation (Ubuntu Linux machine or Linux Virtual Machine)
+## Installation (Ubuntu Linux machine or Linux Virtual Machine)
 This workflow is primarily designed for Linux-based systems. While it can be installed and run on macOS, compatibility may vary and additional configuration might be required. Running the workflow on Windows is not straightforward and typically requires the use of the Windows Subsystem for Linux (WSL), along with manual adjustments to system settings and dependencies.
 
-## 1. Install a local miniconda3 in your home directory to avoid interfering with the CCDC one
+### 1. Install a local miniconda3 in your home directory to avoid interfering with the CCDC one
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
-## 2. Activate the new local miniconda3
+### 2. Activate the new local miniconda3
 ```
 conda activate /home/username/miniconda3/
 source /home/username/miniconda3/bin/activate
 ```
 
-## 3. Create the csd-md conda environment in your local directory 
+### 3. Create the csd-md conda environment in your local directory 
 ```
 conda create --prefix ~/csd-md -c conda-forge --override-channels conda python=3.9
 conda activate /home/username/csd-md/
@@ -37,7 +37,7 @@ conda install -c conda-forge openmm openmm-plumed ambertools openmmforcefields p
 conda install -c https://conda.ccdc.cam.ac.uk csd-python-api
 ```
 
-## 4. Add the PATHS to CSD databases and the license to your .bashrc file in your home directory
+### 4. Add the PATHS to CSD databases and the license to your .bashrc file in your home directory
 ATTENTION: We are assuming here that there is already an existing system install containing the CSD-Portfolio on your VM or machine.
 If there is not, you will need to first install the CSD portfolio, and then identify the paths mentioned below in your VM or computer:
 ```
@@ -54,11 +54,11 @@ export CCDC_ISOSTAR_DATA_DIRECTORY="/opt/CCDC/ccdc-data/isostar/"
 export GOLD_DIR="/opt/CCDC/ccdc-software/gold/GOLD/"
 ```
 
-## 5. Clone the CSD-MD repository
+### 5. Clone the CSD-MD repository
 - From CCDC open-source GitHub repository: `git clone https://github.com/ccdc-opensource/csd-md.git`
 - From Chris Williams original GitHub repository: `git clone https://github.com/mbdx6cw3/CSD-MD.git`
 
-## 6. Test install
+### 6. Test install
 To verify that the installation has been completed successfully, navigate to the tests directory and execute the following command:
 
 `pytest test_install.py &> test_install.log &`
@@ -75,7 +75,7 @@ Once the tests have finished, you can clean up the test directory by running the
 
 `python clean_tests.py`
 
-# Running MD simulations
+## Running MD simulations
 A single .yaml input file is required. This contains all information required to retrieve structures, construct topologies and run MD simulations.
 
 Example usage:
@@ -96,21 +96,21 @@ temperature (K):        temperature in Kelvin
 ensemble:               "NVT"
 ```
 
-### System types:
+#### System types:
 - *ligand* will retrieve a ligand from a CSD entry and generate the initial structure using CCDC conformer generator.
 - *protein* will retrieve a protein from RCSB Protein Data Bank and generate the initial (sanitised) structure using PDBFixer.
 - *ligand-protein* will retrieve a ligand from a CSD entry and a protein from RCSB Protein Data Bank, and then generate the initial structure by docking the ligand to the protein, defining the binding site using a native ligand in the unsanitised protein structure.
 
-### solvate system:
+#### solvate system:
 - *yes* (ligand only) adds water to the system and ionises functional groups appropriate for pH 7.4.
 - *no* will perform a gas phase simulation
 Note that since PairNet has a fixed number of input descriptors, the number of atoms in the ligand must match the number of atoms in the PairNet model.
 
-### simulation types:
+#### simulation types:
 - *standard* will perform an MD simulation
 - *enhanced* will perform a metadynamics simulation with sampling enhanced with respect to the rotatable bonds identified using the CCDC conformer generator
 
-### PairNet Model Library (in "models" directory):
+#### PairNet Model Library (in "models" directory):
 - *models/aspirin/neutral/MD-300K/*
 - *models/aspirin/neutral/Meta-300K/*
 - *models/aspirin/ionised/MD-300K/*
@@ -122,7 +122,7 @@ Note that since PairNet has a fixed number of input descriptors, the number of a
 
 Note that "none" will use an MM potential (GAFF2) instead of PairNet. Water will be modelled using TIP3P.
 
-# Example Library (in "examples" directory):
+## Example Library (in "examples" directory):
 - *asp-gas-MM.yaml*:                MD simulation of aspirin using an MM potential
 - *asp-solution-MM.yaml*:           MD simulation of aspirin in water using an MM potential
 - *asp-gas-MM-enhanced.yaml*:       Metaydnamics simulation of aspirin using an MM potential
@@ -135,7 +135,7 @@ Note that "none" will use an MM potential (GAFF2) instead of PairNet. Water will
 - *asp-4ph9-ML.yaml*:               MD simulation of cyclooxygenase-2 bound aspirin using a PairNet potential
 - *ibu-4ph9-MM.yaml*:               MD simulation of cyclooxygenase-2 bound ibuprofen using a PairNet potential
 
-# References:
+## References:
 
 - CR Groom, IJ Bruno, MP Lightfoot and SC Ward, The Cambridge Structural Database, **2016**, *Acta Cryst.*, B72: 171-179.
 - JC Cole, O Korb, P McCabe, MG Read, R Taylor, Knowledge-Based Conformer Generation Using the Cambridge Structural Database, **2018**, *J. Chem. Inf. Model.*, 58: 615-629.
