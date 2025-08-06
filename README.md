@@ -97,21 +97,21 @@ temperature (K):        temperature in Kelvin
 ensemble:               "NVT"
 ```
 
-#### System types:
+##### System types:
 - *ligand* will retrieve a ligand from a CSD entry and generate the initial structure using CCDC conformer generator.
 - *protein* will retrieve a protein from RCSB Protein Data Bank and generate the initial (sanitised) structure using PDBFixer.
 - *ligand-protein* will retrieve a ligand from a CSD entry and a protein from RCSB Protein Data Bank, and then generate the initial structure by docking the ligand to the protein, defining the binding site using a native ligand in the unsanitised protein structure.
 
-#### Solvate system:
+##### Solvate system:
 - *yes* (ligand only) adds water to the system and ionises functional groups appropriate for pH 7.4.
 - *no* will perform a gas phase simulation
 Note that since PairNet has a fixed number of input descriptors, the number of atoms in the ligand must match the number of atoms in the PairNet model.
 
-#### Simulation types:
+##### Simulation types:
 - *standard* will perform an MD simulation
 - *enhanced* will perform a metadynamics simulation with sampling enhanced with respect to the rotatable bonds identified using the CCDC conformer generator
 
-#### PairNet Model Library (in "models" directory):
+##### PairNet Model Library (in "models" directory):
 - *models/aspirin/neutral/MD-300K/*
 - *models/aspirin/neutral/Meta-300K/*
 - *models/aspirin/ionised/MD-300K/*
