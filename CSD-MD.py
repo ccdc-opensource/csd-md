@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 ############################################################################################################################ 
+#                                                                                                                       
+# NOTICE WITH SOFTWARE                                                                                                  
 #
 # The Cambridge Crystallographic Data Centre (CCDC) provides various scripts to many users for use with CCDC applications.
 # Some scripts may be library scripts, written at some earlier stage in time and distributed to other users. Other scripts
