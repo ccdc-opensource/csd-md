@@ -15,7 +15,9 @@ This workflow was developed with seed funding from the UKRI Impact Acceleration 
 - Christopher D. Williams (UoM), Simon Cottrell (CCDC), Kepa Burusco-Goni (CCDC), Austin Lloyd (CCDC), Bojana Popovic (CCDC), & Richard Bryce (UoM)
 
 #### Citation
-Christopher D. Williams, Simon Cottrell, Kepa Burusco-Goni, Austin Lloyd, Bojana Popovic, and Richard Bryce; *Expanding the CCDC Tools: An Integrated Workflow for Molecular Dynamics Simulations and Machine-Learned Potentials within the CCDC Toolset*. UKRI Impact Acceleration Account (IAA) Proof of Concept Scheme 2024.
+If you use this workflow in your research, please cite as follows:
+- Christopher D. Williams, Simon Cottrell, Kepa Burusco-Goni, Austin Lloyd, Bojana Popovic, and Richard Bryce; *Expanding the CCDC Tools: An Integrated Workflow for Molecular Dynamics Simulations and Machine-Learned Potentials within the CCDC Toolset*. UKRI Impact Acceleration Account (IAA) Proof of Concept Scheme 2024.
+Please, cite references 1-5 as well.
 
 ## Disclaimer
 The Cambridge Crystallographic Data Centre (CCDC) provides various scripts to many users for use with CCDC applications. Some scripts may be library scripts, written at some earlier stage in time and distributed to other users. Other scripts may be written *de novo* or modified library scripts for distribution to a specific client for a specific purpose.
@@ -156,9 +158,9 @@ Note that "none" will use an MM potential (GAFF2) instead of PairNet. Water will
 - *ibu-4ph9-MM.yaml*:               MD simulation of cyclooxygenase-2 bound ibuprofen using a PairNet potential
 
 ## References:
-1. CR Groom, IJ Bruno, MP Lightfoot and SC Ward, The Cambridge Structural Database, **2016**, *Acta Cryst.*, B72: 171-179.
-2. JC Cole, O Korb, P McCabe, MG Read, R Taylor, Knowledge-Based Conformer Generation Using the Cambridge Structural Database, **2018**, *J. Chem. Inf. Model.*, 58: 615-629.
-3. G Jones, P Willett, RC Glen, AR Leach, R Taylor, Development and Validation of a Genetic Algorithm for Flexible Docking, **1997**, *J. Mol. Bio.*, 267: 727-748.
-4. P Eastman, J Swails, JD Chodera, RT McGibbon, Y Zhao, KA Beauchamp, LP Wang, AC Simmonett, MP Harrigan, CD Stern, RP Wiewiora, BR Brooks, VS Pande, OpenMM 7: Rapid Development of High Performance Algorithms for Molecular Dynamics, **2017**, *PLOS Comp. Biol.*, 13(7): e1005659.
-5. CD Williams, J Kalayan, NA Burton, RA Bryce, Stable and Accurate Atomistic Simulations of Flexible Molecules using Conformationally Generalisable Machine Learned Potentials, **2024**, *Chem. Sci.*, 15: 12780-12795.
-6. RA Sykes, NT Johnson, CJ Kingsbury et al, What Has Scripting Ever Done For Us? The CSD Python Application Programming Interface (API), **2024**, *J. Appl. Cryst.*, 57, 1235-1250.
+1. CD Williams, J Kalayan, NA Burton, RA Bryce, Stable and Accurate Atomistic Simulations of Flexible Molecules using Conformationally Generalisable Machine Learned Potentials, **2024**, *Chem. Sci.*, 15: 12780-12795.
+2. CR Groom, IJ Bruno, MP Lightfoot and SC Ward, The Cambridge Structural Database, **2016**, *Acta Cryst.*, B72: 171-179.
+3. JC Cole, O Korb, P McCabe, MG Read, R Taylor, Knowledge-Based Conformer Generation Using the Cambridge Structural Database, **2018**, *J. Chem. Inf. Model.*, 58: 615-629.
+4. G Jones, P Willett, RC Glen, AR Leach, R Taylor, Development and Validation of a Genetic Algorithm for Flexible Docking, **1997**, *J. Mol. Bio.*, 267: 727-748.
+5. 6. RA Sykes, NT Johnson, CJ Kingsbury et al, What Has Scripting Ever Done For Us? The CSD Python Application Programming Interface (API), **2024**, *J. Appl. Cryst.*, 57, 1235-1250.
+6. P Eastman, J Swails, JD Chodera, RT McGibbon, Y Zhao, KA Beauchamp, LP Wang, AC Simmonett, MP Harrigan, CD Stern, RP Wiewiora, BR Brooks, VS Pande, OpenMM 7: Rapid Development of High Performance Algorithms for Molecular Dynamics, **2017**, *PLOS Comp. Biol.*, 13(7): e1005659.
