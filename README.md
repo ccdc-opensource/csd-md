@@ -17,8 +17,7 @@ This workflow was developed with seed funding from the UKRI Impact Acceleration 
 #### Citation
 If you use this workflow in your research, please cite as follows:
 - Christopher D. Williams, Simon Cottrell, Kepa Burusco-Goni, Austin Lloyd, Bojana Popovic, and Richard Bryce; *Expanding the CCDC Tools: An Integrated Workflow for Molecular Dynamics Simulations and Machine-Learned Potentials within the CCDC Toolset*. UKRI Impact Acceleration Account (IAA) Proof of Concept Scheme 2024.
-
-Please, cite references 1-5 as well.
+- Please, cite references 1-5 as well.
 
 ## Disclaimer
 The Cambridge Crystallographic Data Centre (CCDC) provides various scripts to many users for use with CCDC applications. Some scripts may be library scripts, written at some earlier stage in time and distributed to other users. Other scripts may be written *de novo* or modified library scripts for distribution to a specific client for a specific purpose.
@@ -101,10 +100,10 @@ Once the tests have finished, you can clean up the test directory by running the
 ## Running MD simulations
 A single .yaml input file is required. This contains all information required to retrieve structures, construct topologies and run MD simulations.
 
-#### Example usage:
+#### Example usage
 `python CSD-MD.py --md_params input.yaml > md.log`
 
-#### Input options (input.yaml):
+#### Input options (input.yaml)
 ```
 name:                   name of the simulation
 system type:            "ligand", "protein" or "protein-ligand"
@@ -119,21 +118,21 @@ temperature (K):        temperature in Kelvin
 ensemble:               "NVT"
 ```
 
-##### System types:
+##### a) System types
 - *ligand* will retrieve a ligand from a CSD entry and generate the initial structure using CCDC conformer generator.
 - *protein* will retrieve a protein from RCSB Protein Data Bank and generate the initial (sanitised) structure using PDBFixer.
 - *ligand-protein* will retrieve a ligand from a CSD entry and a protein from RCSB Protein Data Bank, and then generate the initial structure by docking the ligand to the protein, defining the binding site using a native ligand in the unsanitised protein structure.
 
-##### Solvate system:
+##### b) Solvate system
 - *yes* (ligand only) adds water to the system and ionises functional groups appropriate for pH 7.4.
 - *no* will perform a gas phase simulation
 Note that since PairNet has a fixed number of input descriptors, the number of atoms in the ligand must match the number of atoms in the PairNet model.
 
-##### Simulation types:
+##### c) Simulation types
 - *standard* will perform an MD simulation
 - *enhanced* will perform a metadynamics simulation with sampling enhanced with respect to the rotatable bonds identified using the CCDC conformer generator
 
-##### PairNet Model Library (in "models" directory):
+##### d) PairNet Model Library (in "models" directory)
 - *models/aspirin/neutral/MD-300K/*
 - *models/aspirin/neutral/Meta-300K/*
 - *models/aspirin/ionised/MD-300K/*
@@ -145,7 +144,7 @@ Note that since PairNet has a fixed number of input descriptors, the number of a
 
 Note that "none" will use an MM potential (GAFF2) instead of PairNet. Water will be modelled using TIP3P.
 
-## Example Library (in "examples" directory):
+## Example Library (in "examples" directory)
 - *asp-gas-MM.yaml*:                MD simulation of aspirin using an MM potential
 - *asp-solution-MM.yaml*:           MD simulation of aspirin in water using an MM potential
 - *asp-gas-MM-enhanced.yaml*:       Metaydnamics simulation of aspirin using an MM potential
@@ -158,7 +157,7 @@ Note that "none" will use an MM potential (GAFF2) instead of PairNet. Water will
 - *asp-4ph9-ML.yaml*:               MD simulation of cyclooxygenase-2 bound aspirin using a PairNet potential
 - *ibu-4ph9-MM.yaml*:               MD simulation of cyclooxygenase-2 bound ibuprofen using a PairNet potential
 
-## References:
+## References
 1. CD Williams, J Kalayan, NA Burton, RA Bryce, Stable and Accurate Atomistic Simulations of Flexible Molecules using Conformationally Generalisable Machine Learned Potentials, **2024**, *Chem. Sci.*, 15: 12780-12795.
 2. CR Groom, IJ Bruno, MP Lightfoot and SC Ward, The Cambridge Structural Database, **2016**, *Acta Cryst.*, B72: 171-179.
 3. JC Cole, O Korb, P McCabe, MG Read, R Taylor, Knowledge-Based Conformer Generation Using the Cambridge Structural Database, **2018**, *J. Chem. Inf. Model.*, 58: 615-629.
