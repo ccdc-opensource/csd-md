@@ -17,6 +17,7 @@ This workflow was developed with seed funding from the UKRI Impact Acceleration 
 #### Citation
 If you use this workflow in your research, please cite as follows:
 - Christopher D. Williams, Simon Cottrell, Kepa Burusco-Goni, Austin Lloyd, Bojana Popovic, and Richard Bryce; *Expanding the CCDC Tools: An Integrated Workflow for Molecular Dynamics Simulations and Machine-Learned Potentials within the CCDC Toolset*. UKRI Impact Acceleration Account (IAA) Proof of Concept Scheme 2024.
+
 Please, cite references 1-5 as well.
 
 ## Disclaimer
