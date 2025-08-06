@@ -57,7 +57,7 @@ export GOLD_DIR="/opt/CCDC/ccdc-software/gold/GOLD/"
 ```
 
 ## Step 5: Clone the CSD-MD repository.
-- From CCDC open-source GitHub repository: `git clone https://github.com/ccdc-opensource/csd-md`
+- From CCDC open-source GitHub repository: `git clone https://github.com/ccdc-opensource/csd-md.git`
 - From Chris Williams original GitHub repository: `git clone https://github.com/mbdx6cw3/CSD-MD.git`
 
 ## Step 6:
