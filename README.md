@@ -23,6 +23,7 @@ The Cambridge Crystallographic Data Centre (CCDC) provides various scripts to ma
 Unless otherwise agreed, CCDC reserves the right to store a modified or *de novo* script and use that script as part of a library available to other users.
 
 No warranty: regardless of the intent of the parties, CCDC makes no warranty that any script is fit for any particular purpose.
+
 License grant: By accepting any CSD-MD script from CCDC, each user accedes to the following terms:
 - CSD-MD scripts and models remain the property of CCDC and the Richard Bryce Group at the University of Manchester. Regardless of any changes made by a user, the original source code, models and script remain the property of CCDC and the Richard Bryce Group at the University of Manchester, and users agree to make no claim of ownership thereof.
 - Users are granted a license to use the CSD-MD software for any purpose, and to change or modify (edit) the script to suit specific needs.
