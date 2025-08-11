@@ -8,9 +8,11 @@ This workflow was developed with seed funding from the UKRI Impact Acceleration 
 
 #### Main author and developer
 - Christopher D. Williams (UoM) -> CSD-MD code, workflows and ML models
+
 #### Developers
 - Simon Cottrell (CCDC) -> ccdc_convertor & convertor tests
 - Kepa Burusco-Goni (CCDC) -> install tests
+
 #### Credits
 - Christopher D. Williams (UoM), Simon Cottrell (CCDC), Kepa Burusco-Goni (CCDC), Austin Lloyd (CCDC), Bojana Popovic (CCDC), & Richard Bryce (UoM)
 
@@ -162,5 +164,5 @@ Note that "none" will use an MM potential (GAFF2) instead of PairNet. Water will
 2. CR Groom, IJ Bruno, MP Lightfoot and SC Ward, The Cambridge Structural Database, **2016**, *Acta Cryst.*, B72: 171-179.
 3. JC Cole, O Korb, P McCabe, MG Read, R Taylor, Knowledge-Based Conformer Generation Using the Cambridge Structural Database, **2018**, *J. Chem. Inf. Model.*, 58: 615-629.
 4. G Jones, P Willett, RC Glen, AR Leach, R Taylor, Development and Validation of a Genetic Algorithm for Flexible Docking, **1997**, *J. Mol. Bio.*, 267: 727-748.
-5. 6. RA Sykes, NT Johnson, CJ Kingsbury et al, What Has Scripting Ever Done For Us? The CSD Python Application Programming Interface (API), **2024**, *J. Appl. Cryst.*, 57, 1235-1250.
+5. RA Sykes, NT Johnson, CJ Kingsbury et al, What Has Scripting Ever Done For Us? The CSD Python Application Programming Interface (API), **2024**, *J. Appl. Cryst.*, 57, 1235-1250.
 6. P Eastman, J Swails, JD Chodera, RT McGibbon, Y Zhao, KA Beauchamp, LP Wang, AC Simmonett, MP Harrigan, CD Stern, RP Wiewiora, BR Brooks, VS Pande, OpenMM 7: Rapid Development of High Performance Algorithms for Molecular Dynamics, **2017**, *PLOS Comp. Biol.*, 13(7): e1005659.
